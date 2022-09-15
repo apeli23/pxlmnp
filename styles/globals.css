@@ -1,7 +1,14 @@
+
+
 html,
 body {
   padding: 0;
   margin: 0;
+  background: black;
+  color: #FFFF;
+  text-align: center;
+    object-fit: cover;
+    align-items: center;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -14,13 +21,55 @@ a {
 * {
   box-sizing: border-box;
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.container{
+  overflow: hidden;
 }
+.row{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  /* border: 3px solid rgb(0, 0, 0); */
+  text-align: center;
+  padding: 10px;
+  margin: 50px;
+}
+
+.column {
+  flex: 1 1 0px;
+  border: 10px;
+  /* border:3px solid  rgb(182, 0, 0); */
+  text-align: center;
+}
+nav {
+  height: 100px;
+}
+.container{
+  overflow: hidden;
+}
+.row{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  /* border: 3px solid rgb(0, 0, 0); */
+  text-align: center;
+  padding: 10px;
+  margin: 50px;
+}
+
+.column {
+  flex: 1 1 0px;
+  border: 10px;
+  /* border:3px solid  rgb(182, 0, 0); */
+  text-align: center;
+}
+
+canvas {
+  border: 2px solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70vw;
+  height: 700px;
+}
+ 
